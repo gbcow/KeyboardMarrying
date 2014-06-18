@@ -1,0 +1,92 @@
+﻿<Window x:Class="KeyboardMarrying.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="750" Width="1000" PreviewKeyDown="Window_PreviewKeyDown" Loaded="Window_Loaded" PreviewKeyUp="Window_PreviewKeyUp" ResizeMode="NoResize">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="992" Source="images/desktop.png" Stretch="Fill"/>
+        <Image x:Name="img1_2" HorizontalAlignment="Left" Height="336" Margin="64,34,0,0" VerticalAlignment="Top" Width="199" OpacityMask="White" Stretch="Fill" Source="images/phone.png"/>
+        <Image x:Name="img2_2" HorizontalAlignment="Left" Height="336" Margin="391,34,0,0" VerticalAlignment="Top" Width="199" OpacityMask="White" Stretch="Fill" Source="images/phone.png"/>
+        <Image x:Name="img3_2" HorizontalAlignment="Left" Height="336" Margin="702,34,0,0" VerticalAlignment="Top" Width="199" OpacityMask="White" Stretch="Fill" Source="images/phone.png"/>
+        <Image x:Name="img4_2" HorizontalAlignment="Left" Height="336" Margin="64,391,0,-7" VerticalAlignment="Top" Width="199" OpacityMask="White" Stretch="Fill" Source="images/phone.png"/>
+        <Image x:Name="img5_2" HorizontalAlignment="Left" Height="336" Margin="391,391,0,-7" VerticalAlignment="Top" Width="199" OpacityMask="White" Stretch="Fill" Source="images/phone.png"/>
+        <Image x:Name="img6_2" HorizontalAlignment="Left" Height="336" Margin="702,391,0,-7" VerticalAlignment="Top" Width="199" OpacityMask="White" Stretch="Fill" Source="images/phone.png"/>
+
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="202" Margin="80,99,0,0" VerticalAlignment="Top" Width="162" OpacityMask="White" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.532" Source="images/gray.png"/>
+        <Label x:Name="lblTimer" Content="Label" HorizontalAlignment="Left" Margin="64,10,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Score:" HorizontalAlignment="Left" Margin="809,-13,0,0" VerticalAlignment="Top" Width="78" Height="42" FontSize="24" Foreground="#FF49C900"/>
+        <Label x:Name="Score" Content="0" HorizontalAlignment="Left" Margin="892,-13,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF3BA200"/>
+        <Label Content="Lives:" HorizontalAlignment="Left" Margin="649,-13,0,0" VerticalAlignment="Top" Height="38" Width="78" FontSize="24" Foreground="Red"/>
+        <Label x:Name="Lives" Content="3" HorizontalAlignment="Left" Margin="732,-13,0,0" VerticalAlignment="Top" FontSize="24" Foreground="Red"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="202" Margin="406,99,0,0" VerticalAlignment="Top" Width="162" OpacityMask="White" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.532" Source="images/gray.png"/>
+        <Image x:Name="img3" HorizontalAlignment="Left" Height="202" Margin="720,99,0,0" VerticalAlignment="Top" Width="162" OpacityMask="White" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.532" Source="images/gray.png"/>
+        <Image x:Name="img4" HorizontalAlignment="Left" Height="202" Margin="80,457,0,0" VerticalAlignment="Top" Width="162" OpacityMask="White" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.532" Source="images/gray.png"/>
+        <Image x:Name="img5" HorizontalAlignment="Left" Height="202" Margin="406,457,0,0" VerticalAlignment="Top" Width="162" OpacityMask="White" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.532" Source="images/gray.png"/>
+        <Image x:Name="img6" HorizontalAlignment="Left" Height="202" Margin="720,457,0,0" VerticalAlignment="Top" Width="162" OpacityMask="White" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.532" Source="images/gray.png"/>
+
+        <Image x:Name="Wkey"  HorizontalAlignment="Left" Height="45" Margin="88,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/W.png" Visibility="Hidden"/>
+        <Image x:Name="Skey" HorizontalAlignment="Left" Height="45" Margin="133,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/S.png" Visibility="Hidden"/>
+        <Image x:Name="Xkey" HorizontalAlignment="Left" Height="45" Margin="179,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/X.png" Visibility="Hidden"/>
+        <Image x:Name="Ukey" HorizontalAlignment="Left" Height="45" Margin="88,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/U.png" Visibility="Hidden"/>
+        <Image x:Name="Jkey" HorizontalAlignment="Left" Height="45" Margin="133,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/J.png" Visibility="Hidden"/>
+        <Image x:Name="Mkey" HorizontalAlignment="Left" Height="45" Margin="179,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/M.png" Visibility="Hidden"/>
+        <Image x:Name="Ekey" HorizontalAlignment="Left" Height="45" Margin="418,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/E.png" Visibility="Hidden"/>
+        <Image x:Name="Dkey" HorizontalAlignment="Left" Height="45" Margin="463,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/D.png" Visibility="Hidden"/>
+        <Image x:Name="Ckey" HorizontalAlignment="Left" Height="45" Margin="509,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/C.png" Visibility="Hidden"/>
+        <Image x:Name="Rkey" HorizontalAlignment="Left" Height="45" Margin="730,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/R.png" Visibility="Hidden"/>
+        <Image x:Name="Fkey" HorizontalAlignment="Left" Height="45" Margin="775,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/F.png" Visibility="Hidden"/>
+        <Image x:Name="Vkey" HorizontalAlignment="Left" Height="45" Margin="821,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key/V.png" Visibility="Hidden"/>
+        <Image x:Name="Ikey" HorizontalAlignment="Left" Height="45" Margin="418,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/I.png" Visibility="Hidden"/>
+        <Image x:Name="Kkey" HorizontalAlignment="Left" Height="45" Margin="463,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/K.png" Visibility="Hidden"/>
+        <Image x:Name="commakey" HorizontalAlignment="Left" Height="45" Margin="509,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/camma.png" Visibility="Hidden"/>
+        <Image x:Name="Okey" HorizontalAlignment="Left" Height="45" Margin="730,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/O.png" Visibility="Hidden"/>
+        <Image x:Name="Lkey" HorizontalAlignment="Left" Height="45" Margin="775,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/L.png" Visibility="Hidden"/>
+        <Image x:Name="periodkey" HorizontalAlignment="Left" Height="45" Margin="821,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key/period.png" Visibility="Hidden"/>
+
+        <Image x:Name="Wkey2" HorizontalAlignment="Left" Height="45" Margin="88,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/W2.png" Visibility="Hidden"/>
+        <Image x:Name="Skey2" HorizontalAlignment="Left" Height="45" Margin="133,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/S2.png" Visibility="Hidden"/>
+        <Image x:Name="Xkey2" HorizontalAlignment="Left" Height="45" Margin="179,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/X2.png" Visibility="Hidden"/>
+        <Image x:Name="Ukey2" HorizontalAlignment="Left" Height="45" Margin="88,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/U2.png" Visibility="Hidden"/>
+        <Image x:Name="Jkey2" HorizontalAlignment="Left" Height="45" Margin="133,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/J2.png" Visibility="Hidden"/>
+        <Image x:Name="Mkey2" HorizontalAlignment="Left" Height="45" Margin="179,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/M2.png" Visibility="Hidden"/>
+        <Image x:Name="Ekey2" HorizontalAlignment="Left" Height="45" Margin="418,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/E2.png" Visibility="Hidden"/>
+        <Image x:Name="Dkey2" HorizontalAlignment="Left" Height="45" Margin="463,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/D2.png" Visibility="Hidden"/>
+        <Image x:Name="Ckey2" HorizontalAlignment="Left" Height="45" Margin="509,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/C2.png" Visibility="Hidden"/>
+        <Image x:Name="Rkey2" HorizontalAlignment="Left" Height="45" Margin="730,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/R2.png" Visibility="Hidden"/>
+        <Image x:Name="Fkey2" HorizontalAlignment="Left" Height="45" Margin="775,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/F2.png" Visibility="Hidden"/>
+        <Image x:Name="Vkey2" HorizontalAlignment="Left" Height="45" Margin="821,310,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/V2.png" Visibility="Hidden"/>
+        <Image x:Name="Ikey2" HorizontalAlignment="Left" Height="45" Margin="418,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/I2.png" Visibility="Hidden"/>
+        <Image x:Name="Kkey2" HorizontalAlignment="Left" Height="45" Margin="463,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/K2.png" Visibility="Hidden"/>
+        <Image x:Name="commakey2" HorizontalAlignment="Left" Height="45" Margin="509,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/camma2.png" Visibility="Hidden"/>
+        <Image x:Name="Okey2" HorizontalAlignment="Left" Height="45" Margin="730,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/O2.png" Visibility="Hidden"/>
+        <Image x:Name="Lkey2" HorizontalAlignment="Left" Height="45" Margin="775,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/L2.png" Visibility="Hidden"/>
+        <Image x:Name="periodkey2" HorizontalAlignment="Left" Height="45" Margin="821,669,0,0" VerticalAlignment="Top" Width="45" Source="images/key2/period2.png" Visibility="Hidden"/>
+
+        <Button x:Name="easyBtn" Content="Easy" HorizontalAlignment="Left" Margin="299,99,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="easy_Click" Visibility="Hidden" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Button x:Name="mediumBtn" Content="Medium" HorizontalAlignment="Left" Margin="299,274,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="medium_Btn" Visibility="Hidden" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Button x:Name="hardBtn" Content="Hard" HorizontalAlignment="Left" Margin="299,457,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="hard_Click" Visibility="Hidden" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="299,155,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="Button_Click" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Button x:Name="instructiontBtn" Content="Instruction" HorizontalAlignment="Left" Margin="299,307,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="instructiontBtn_Click" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Button x:Name="exitBtn" Content="Exit" HorizontalAlignment="Left" Margin="299,606,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="Exit_Click" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Button x:Name="aboutBtn" Content="About" HorizontalAlignment="Left" Margin="299,452,0,0" VerticalAlignment="Top" Width="375" Height="96" FontSize="36" Click="About_Click" FontWeight="Bold" Foreground="#FF0E53E8" Background="#FF9E501A"/>
+        <Label x:Name="gameoverLabel" Content="GameOver" HorizontalAlignment="Center" Margin="206,306,266,0" VerticalAlignment="Top" Height="154" Width="520" FontSize="60"  FontFamily="Rockwell Extra Bold" FontStyle="Italic" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FFAC0000" Visibility="Hidden"/>
+        <Image x:Name="Count1" HorizontalAlignment="Left" Height="58" Margin="88,41,0,0" VerticalAlignment="Top" Width="136" Stretch="Fill"/>
+        <Image x:Name="Count2" HorizontalAlignment="Left" Height="58" Margin="418,41,0,0" VerticalAlignment="Top" Width="136" Stretch="Fill"/>
+        <Image x:Name="Count3" HorizontalAlignment="Left" Height="58" Margin="730,41,0,0" VerticalAlignment="Top" Width="136" Stretch="Fill"/>
+        <Image x:Name="Count4" HorizontalAlignment="Left" Height="58" Margin="88,400,0,0" VerticalAlignment="Top" Width="136" Stretch="Fill"/>
+        <Image x:Name="Count5" HorizontalAlignment="Left" Height="58" Margin="418,398,0,0" VerticalAlignment="Top" Width="136" Stretch="Fill"/>
+        <Image x:Name="Count6" HorizontalAlignment="Left" Height="58" Margin="732,400,0,0" VerticalAlignment="Top" Width="136" Stretch="Fill"/>
+        <Image x:Name="Bonus" HorizontalAlignment="Left" Height="259" Margin="178,256,0,0" VerticalAlignment="Top" Width="630" Stretch="Fill"/>
+        <Label Content="Level:" HorizontalAlignment="Left" Margin="495,-13,0,0" VerticalAlignment="Top" Width="73" FontSize="24" Foreground="#FFE8FF00"/>
+        <Label x:Name="Level" Content="0" HorizontalAlignment="Left" Margin="573,-13,0,0" VerticalAlignment="Top" Width="31" FontSize="24" Foreground="#FFE8FF00"/>
+        <Image x:Name="TitleImage" HorizontalAlignment="Left" Height="226" Margin="540,-1,0,0" VerticalAlignment="Top" Width="427" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Source="images/title.png">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15.178"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+﻿<Window x:Class="KeyboardMarrying.InstructionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InstructionWindow" Height="600" Width="600">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="570" VerticalAlignment="Top" Width="592" Source="images/instruction.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="778,374,-286,0" VerticalAlignment="Top" Width="100"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="229,444,0,0" VerticalAlignment="Top" Width="126" Source="images/OK.png" Stretch="Fill" MouseDown="Image_MouseDown"/>
+
+    </Grid>
+</Window>
